@@ -1,10 +1,11 @@
-from stats import count_chars, count_words, sort_chars
 import sys
+
+from stats import count_chars, count_words, sort_chars
+
 
 def get_book_text(path: str):
     with open(path) as f:
         return f.read()
-
 
 def print_stats(chars: list[dict]) -> None:
     for char in chars:
